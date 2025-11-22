@@ -3,11 +3,11 @@ import arrow from "../assets/icons/arrow.svg";
 
 const InfoBox = ({ text, link, btnText }) => {
   return (
-    <div className="InfoBox">
+    <div className="info-box">
       <p className="font-medium sm:text-xl text-center">{text}</p>
       <Link className="neo-brutalism-white neo-btn" to={link}>
         {btnText}
-        <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+        <img src={arrow} alt="arrow" className="w-5 h-5 object-contain" />
       </Link>
     </div>
   );
