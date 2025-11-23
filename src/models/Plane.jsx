@@ -24,7 +24,7 @@ const Plane = ({ isRotating, position, ...props }) => {
     // Adjust radius and speed as needed
     const t = clock.getElapsedTime();
     const radius = 25; // Radius of the orbit
-    const speed = 0.2; // Speed of the orbit
+    const speed = 0.4; // Speed of the orbit
 
     // Center point (Island position)
     const centerX = 0;

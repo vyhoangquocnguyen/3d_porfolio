@@ -4,10 +4,10 @@ import arrow from "../assets/icons/arrow.svg";
 const InfoBox = ({ text, link, btnText }) => {
   return (
     <div className="info-box">
-      <p className="font-medium sm:text-xl text-center">{text}</p>
+      <p className="font-medium sm:text-xl text-center ">{text}</p>
       <Link className="neo-brutalism-white neo-btn" to={link}>
         {btnText}
-        <img src={arrow} alt="arrow" className="w-5 h-5 object-contain" />
+        <img src={arrow} alt="arrow" className="w-3 h-3 object-contain" />
       </Link>
     </div>
   );
@@ -27,8 +27,8 @@ const renderConter = {
       btnText="About"
     />
   ),
-  3: <InfoBox text="My projects overview" link="/projects" btnText="Visit my portfolio" />,
-  4: <InfoBox text="Need to get in touch?" link="/contact" btnText="Contact me" />,
+  3: <InfoBox text="Visit my projects overview to see my work." link="/projects" btnText="Projects" />,
+  4: <InfoBox text="Need to get in touch? Send me a message." link="/contact" btnText="Contact Me" />,
 };
 
 const HomeInfo = ({ currentStage }) => {

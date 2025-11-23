@@ -53,8 +53,8 @@ const Home = () => {
       screenScale = [1.5, 1.5, 1.5];
       screenPosition = [0, -1.5, 0];
     } else {
-      screenScale = [3, 3, 3];
-      screenPosition = [0, 4, -4];
+      screenScale = [4, 4, 4];
+      screenPosition = [0, 5, -5];
     }
     return [screenScale, screenPosition];
   };
@@ -71,11 +71,11 @@ const Home = () => {
         className={`w-full h-screen bg-transparent ${isRotating ? "cursor-grabbing" : "cursor-grab"}`}
         camera={{ near: 0.1, far: 1000 }}>
         <Suspense fallback={<Loader />}>
-          <directionalLight position={[1, 1, 1]} intensity={1.2} />
-          <ambientLight intensity={0.2} />
-          <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={0.3} />
+          <directionalLight position={[1, 1, 1]} intensity={0.9} />
+          <ambientLight intensity={0.1} />
+          <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={0.2} />
 
-          <Bird />
+          {/* <Bird /> */}
           <Sky isRotating={isRotating} />
           <Island
             scale={isLandScale}
