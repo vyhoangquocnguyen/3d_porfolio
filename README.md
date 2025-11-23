@@ -62,9 +62,14 @@ npm run build
 ## 📸 Screenshots
 
 ![alt text](image.png)
+
 ## 🤝 Contributing
 
 Feel free to open issues or submit pull requests. Please follow the existing code style and run `npm run lint` before submitting.
+
+## References
+
+- Inspired by the tutorial series from [Adrian Hajdin](https://github.com/adrianhajdin).
 
 ## 📄 License
 
