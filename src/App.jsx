@@ -1,11 +1,10 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 import { Home, About, Projects, Contact } from "./pages";
 
 const App = () => {
   return (
-    <main className="bg-slate-300/20 h-screen ">
+    <main className="bg-slate-300/20 min-h-screen">
       <Router>
         <NavBar />
         <Routes>
@@ -19,7 +18,6 @@ const App = () => {
                   <Route path="/projects" element={<Projects />} />
                   <Route path="/contact" element={<Contact />} />
                 </Routes>
-                <Footer />
               </>
             }
           />
