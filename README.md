@@ -1,16 +1,71 @@
-# React + Vite
+# 3D Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive 3D portfolio built with **React**, **@react-three/fiber**, and **Vite**. The site showcases a rotating island, a plane that orbits the island, and a responsive UI with custom styling.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **3D scene** with island, sky, bird, and animated plane using three‑js via `@react-three/fiber`.
+- **Responsive design** – layout adapts for mobile and desktop.
+- **Audio background** with controllable playback.
+- **Dynamic content** – HomeInfo component displays different messages based on the current stage.
+- **Custom CSS** using Tailwind‑like utilities and a dark‑mode aesthetic.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (hooks, functional components)
+- **Vite** – fast dev server & bundler
+- **@react-three/fiber** – React renderer for three‑js
+- **Three.js** – 3D graphics
+- **Tailwind‑style utilities** (via custom CSS)
+- **React Router** – navigation between pages
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/3d_porfolio.git
+cd 3d_porfolio
+
+# Install dependencies
+npm install
+```
+
+## ▶️ Development
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+The static files will be generated in the `dist/` folder.
+
+## 🎨 Styling
+
+The project uses a custom CSS file (`src/index.css`) that imports Google fonts and defines a Tailwind‑like utility layer. Feel free to adjust the color palette, shadows, and spacing to match your brand.
+
+## 🚀 Deploy
+
+You can deploy the `dist/` folder to any static‑hosting service (GitHub Pages, Vercel, Netlify, etc.). Example for GitHub Pages:
+
+```bash
+npm run build
+# push the contents of dist/ to the gh-pages branch
+```
+
+## 📸 Screenshots
+
+![alt text](image.png)
+## 🤝 Contributing
+
+Feel free to open issues or submit pull requests. Please follow the existing code style and run `npm run lint` before submitting.
+
+## 📄 License
+
+This project is licensed under the MIT License.
